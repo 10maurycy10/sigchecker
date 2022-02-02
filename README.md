@@ -4,7 +4,9 @@ A simple rust program to detect mislabled files.
 
 ## Example usege, with usb drive mounted at ``/mnt/usb``
 
-``find /mnt/usb | cargo run | tee log``
+``sudo find /mnt/usb | cargo run --release | tee log``
+
+- replace ``cargo run --release`` with ``sudo ./target/release/sigchecker`` if it hangs.
 
 ## Requirements
 
