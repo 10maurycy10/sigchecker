@@ -28,7 +28,7 @@ fn main() {
                 match db.get(&mimetype) {
                     None => println!("{}: is {}",&line, &mimetype),
                     Some(exts) => if !exts.contains(&*ext) {
-                        println!("{}: is {} '{}'",&line, &mimetype,ext);
+                        println!("{}: is {}",&line, &mimetype);
                     }
                 }
             }            
