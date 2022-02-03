@@ -1,8 +1,10 @@
 # sigchecker
 
-A simple rust program to detect mislabled files.
+A simple rust program to detect files where the file extension and contents don't match.
 
-## Example usege, with usb drive mounted at ``/mnt/usb``
+For example if you rename a mpv file ".png" it will be detected.
+
+## Example usage, with usb drive mounted at /mnt/usb``
 
 ``sudo find /mnt/usb | cargo run --release | tee log``
 
@@ -10,8 +12,10 @@ A simple rust program to detect mislabled files.
 
 ## Requirements
 
-Requires libmagic, It likley wont work on windows without cygwin or wsl.
+Requires libmagic, It likely wont work on windows without CygWin or WSL.
 
-## Fixing Flase positives
+## Fixing False positives
 
-If your terminal is spammed with false positives, add the reported file type and extention ("" if no extention) to db.json. Then rerun the program
+If your terminal is spammed with false positives, add the reported file type and extension ("" if no extension) to db.json. Then rerun the program.
+
+Contributions welcome.
